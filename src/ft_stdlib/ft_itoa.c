@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-// warning:
-//	- recursive -> strlcpy
-//	handle 0 ?
-
 static int	digit_counter(int n)
 {
 	int	i;

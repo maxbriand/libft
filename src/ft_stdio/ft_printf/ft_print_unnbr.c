@@ -1,43 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_print_unnbr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/14 23:13:52 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:17:56 by mbriand          ###   ########.fr       */
+/*   Created: 2023/11/24 20:50:57 by mbriand           #+#    #+#             */
+/*   Updated: 2023/12/02 18:12:40 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// convert ascii to integer
-// don't forget to handle max and min of int
-
-int	ft_atoi(const char *nptr)
+int	ft_print_unnbr(unsigned int n)
 {
-	char	test;
-	int		i;
-	int		total;
+	int	i;
 
 	i = 0;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == ' ')
-		i++;
-	test = nptr[i];
-	if (nptr[i] == '-' || nptr[i] == '+')
+	if (n > 9)
 	{
-		test = nptr[i];
-		i++;
+		i = ft_print_unnbr(n / 10);
+		ft_print_unnbr(n % 10);
 	}
-	total = 0;
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		total *= 10;
-		total += (nptr[i] - 48);
-		i++;
-	}
-	if (test == '-')
-		total *= -1;
-	return (total);
+	else
+		ft_print_char(n + '0');
+	i++;
+	return (i);
 }
