@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 // All elements in the list are reverse
 void	ft_list_reverse(t_list **begin_list)

@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 // Nodes counter
 int	ft_list_size(t_list *begin_list)

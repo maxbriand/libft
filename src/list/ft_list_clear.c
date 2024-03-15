@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 /*// free all node data
 void	free_fct(void *pt_value)

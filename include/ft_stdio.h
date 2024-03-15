@@ -13,8 +13,6 @@
 #ifndef FT_STDIO_H
 # define FT_STDIO_H
 
-# include "libft.h"
-
 // ft_printf functions
 int		ft_printf(const char *s, ...);
 int		ft_parser(char c, va_list args);

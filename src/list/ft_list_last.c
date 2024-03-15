@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 // Return the last node of the linked list
 t_list *ft_list_last(t_list *begin_list)

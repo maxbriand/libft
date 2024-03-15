@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 // Get the node number x of the linked list
 t_list	*ft_list_at(t_list *begin_list, unsigned int nbr)

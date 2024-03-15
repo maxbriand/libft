@@ -1,4 +1,4 @@
-#include "ft_list.h"
+#include "libft.h"
 
 // Convert an array of string in a linked list
 t_list	*ft_list_push_strs(int size, char **strs)

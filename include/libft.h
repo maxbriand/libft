@@ -19,8 +19,8 @@
 
 #include "ft_ctype.h"
 #include "ft_stdio.h"
-#include "stdlib.h"
-#include "string.h"
+#include "ft_stdlib.h"
+#include "ft_string.h"
 #include "get_next_line_bonus.h"
 #include "list.h"
 
