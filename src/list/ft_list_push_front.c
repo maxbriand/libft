@@ -18,21 +18,21 @@ void	ft_list_push_front(t_list **begin_list, void *data)
 }
 
 // Empty list
-int main(void)
-{
-	t_list	*bloc1;
-	int		value1;
+// int main(void)
+// 	{
+// 	t_list	*bloc1;
+// 	int		value1;
 
-	value1 = 89;
-	bloc1 = NULL;
-	ft_list_push_front(&bloc1, &value1);
-	while (bloc1 != NULL)
-	{
-		printf("%d\n", *(int *)bloc1->data);
-		bloc1 = bloc1->next;
-	}
-	return (0);
-}
+// 	value1 = 89;
+// 	bloc1 = NULL;
+// 	ft_list_push_front(&bloc1, &value1);
+// 	while (bloc1 != NULL)
+// 	{
+// 		printf("%d\n", *(int *)bloc1->data);
+// 		bloc1 = bloc1->next;
+// 	}
+// 	return (0);
+// }
 
 /* //None empty list
 int	main(void)

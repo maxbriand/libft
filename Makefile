@@ -19,6 +19,7 @@ SRC =	$(FT_CTYPE)ft_isalpha.c \
 		$(FT_CTYPE)ft_toupper.c \
 		$(FT_CTYPE)ft_tolower.c \
 		\
+		$(FT_PRINTF)ft_printf.c \
 		$(FT_PRINTF)ft_parser.c \
 		$(FT_PRINTF)ft_print_char.c \
 		$(FT_PRINTF)ft_print_hexanbr.c \
@@ -79,16 +80,16 @@ PREPRO_FILES = $(patsubst %.c, %.txt, $(SRC))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
+	ar rc $(NAME) $(OBJ)
 
-$(OBJ): $(SRC) $(INCLUDE)
+%.o: %.c $(INCLUDE)
 	$(CC) $(CFLAGS) -c $< -o $@ -I./include
 
-prepro: $(PREPRO_FILES)
-	echo "Hello"
+# prepro: $(PREPRO_FILES)
+# 	echo "Hello"
 
-$(PREPRO_FILES): %.txt : %.c
-	$(CC) $(CFLAGS) -E $< -o $@ -I./include
+# $(PREPRO_FILES): %.txt : %.c
+# 	$(CC) $(CFLAGS) -E $< -o $@ -I./include
 
 clean:
 	@rm -f $(OBJ)

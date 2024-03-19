@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "libft.h"
 
 // Extracts string up to newline or end; allocates memory.
 static char	*get_head(char *s)
@@ -20,16 +20,16 @@ static char	*get_head(char *s)
 
 	if (s == NULL)
 		return (NULL);
-	if (ft_strchr(s, '\n') == 0)
-		len_output = ft_strlen(s) + 1;
+	if (ft_strchr_two(s, '\n') == 0)
+		len_output = ft_strlen_two(s) + 1;
 	else
-		len_output = ft_strchr(s, '\n') - s + 2;
+		len_output = ft_strchr_two(s, '\n') - s + 2;
 	if (len_output == 0)
 		return (0);
 	str_output = malloc(len_output);
 	if (str_output == NULL)
 		return (0);
-	ft_strlcpy(str_output, s, len_output);
+	ft_strlcpy_two(str_output, s, len_output);
 	return (str_output);
 }
 
@@ -39,17 +39,17 @@ static char	*get_tail(char *s, int i)
 	char	*str_output;
 	int		len_output;
 
-	if (ft_strchr(s, '\n') == 0 || s == NULL)
+	if (ft_strchr_two(s, '\n') == 0 || s == NULL)
 	{
 		if (i == 1)
 			free (s);
 		return (NULL);
 	}
-	len_output = ft_strlen(ft_strchr(s, '\n') + 1) + 1;
+	len_output = ft_strlen_two(ft_strchr_two(s, '\n') + 1) + 1;
 	str_output = malloc(len_output);
 	if (str_output == NULL)
 		return (0);
-	ft_strlcpy(str_output, ft_strchr(s, '\n') + 1, len_output + 1);
+	ft_strlcpy_two(str_output, ft_strchr_two(s, '\n') + 1, len_output + 1);
 	if (i == 1)
 		free (s);
 	if (str_output[0] == 0)
@@ -68,7 +68,7 @@ static void	free_str(char *line, char *tail, char *buffer, int buffer_len)
 		free (buffer);
 		return ;
 	}
-	if (ft_strchr(line, '\n') == 0)
+	if (ft_strchr_two(line, '\n') == 0)
 	{
 		free (tail);
 		free (buffer);
@@ -82,7 +82,7 @@ static char	*fill_line(char *line, char *buffer, int buffer_len)
 	if (line == NULL)
 		line = get_head(buffer);
 	else
-		line = ft_strjoin(line, get_head(buffer));
+		line = ft_strjoin_two(line, get_head(buffer));
 	return (line);
 }
 
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 	buffer_len = BUFFER_SIZE;
 	line = get_head(tail[fd]);
 	tail[fd] = get_tail(tail[fd], 1);
-	while (tail[fd] == NULL && ft_strchr(line, '\n') == 0)
+	while (tail[fd] == NULL && ft_strchr_two(line, '\n') == 0)
 	{
 		buffer = malloc(BUFFER_SIZE + 1);
 		if (buffer == NULL)

@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
+# include <limits.h>
 
 #include "ft_ctype.h"
 #include "ft_stdio.h"

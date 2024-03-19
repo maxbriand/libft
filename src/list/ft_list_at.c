@@ -3,7 +3,7 @@
 // Get the node number x of the linked list
 t_list	*ft_list_at(t_list *begin_list, unsigned int nbr)
 {
-	int		i;
+	unsigned int	i;
 
 	i = 0;
 	while (i <= nbr && begin_list != NULL) // for node != NULL
