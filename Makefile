@@ -80,10 +80,10 @@ PREPRO_FILES = $(patsubst %.c, %.txt, $(SRC))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
+	@ar rc $(NAME) $(OBJ)
 
 %.o: %.c $(INCLUDE)
-	$(CC) $(CFLAGS) -c $< -o $@ -I./include
+	@$(CC) $(CFLAGS) -c $< -o $@ -I./include
 
 # prepro: $(PREPRO_FILES)
 # 	echo "Hello"
