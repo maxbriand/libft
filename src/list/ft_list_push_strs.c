@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_list_push_strs.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/02 18:03:01 by mbriand           #+#    #+#             */
+/*   Updated: 2024/04/02 18:03:35 by mbriand          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 // Convert an array of string in a linked list
@@ -6,7 +18,7 @@ t_list	*ft_list_push_strs(int size, char **strs)
 	t_list	*fst_node;
 	t_list	*node_to_iterate;
 	int		i;
-	
+
 	i = size - 2;
 	while (i >= 0)
 	{
@@ -18,7 +30,7 @@ t_list	*ft_list_push_strs(int size, char **strs)
 		else
 			node_to_iterate = ft_create_elem(strs[i]);
 		if (i == size - 2)
-			fst_node = node_to_iterate; 
+			fst_node = node_to_iterate;
 		i--;
 	}
 	return (fst_node);
