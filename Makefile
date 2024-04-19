@@ -61,8 +61,8 @@ SRC =	$(FT_CTYPE)ft_isalpha.c \
 		$(FT_STRING)ft_substr.c \
 		$(FT_STRING)ft_strtrim.c \
 		\
-		$(GNL)get_next_line_bonus.c \
-		$(GNL)get_next_line_utils_bonus.c \
+		$(GNL)get_next_line.c \
+		$(GNL)get_next_line_utils.c \
 		\
 		$(LIST)ft_create_elem.c \
 		$(LIST)ft_list_at.c \
