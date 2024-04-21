@@ -60,6 +60,7 @@ SRC =	$(FT_CTYPE)ft_isalpha.c \
 		$(FT_STRING)ft_strrchr.c \
 		$(FT_STRING)ft_substr.c \
 		$(FT_STRING)ft_strtrim.c \
+		$(FT_STRING)ft_count_char.c \
 		\
 		$(GNL)get_next_line.c \
 		$(GNL)get_next_line_utils.c \
