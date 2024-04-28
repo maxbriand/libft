@@ -87,12 +87,6 @@ $(NAME): $(OBJ)
 %.o: %.c $(INCLUDE)
 	@$(CC) $(CFLAGS) -c $< -o $@ -I./include
 
-# prepro: $(PREPRO_FILES)
-# 	echo "Hello"
-
-# $(PREPRO_FILES): %.txt : %.c
-# 	$(CC) $(CFLAGS) -E $< -o $@ -I./include
-
 clean:
 	@rm -f $(OBJ)
 	@rm -f $(PREPRO_FILES)
