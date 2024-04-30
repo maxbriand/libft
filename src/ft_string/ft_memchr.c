@@ -6,17 +6,11 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:50:35 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:18:48 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/04/30 17:46:47 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-memchr = src in the memory
-c is the char to search
-s is the string and n is the lenght to search
-*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

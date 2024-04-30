@@ -6,12 +6,9 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:24:38 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/28 22:01:21 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/04/30 17:47:40 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// looking for a char in a string
-// return 
 
 char	*ft_strchr(const char *s, int c)
 {

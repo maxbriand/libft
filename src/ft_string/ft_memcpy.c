@@ -6,14 +6,11 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:49:55 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:19:04 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/04/30 17:47:14 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// the if it's an add after using unit tester but
-// it's different than the classic behavior
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

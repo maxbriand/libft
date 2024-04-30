@@ -6,14 +6,13 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:49:34 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:18:59 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/04/30 17:46:57 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// memcmp = compare pointer in memory
-
+// Compare pointer in memory
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;

@@ -6,18 +6,11 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:22:30 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:19:36 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/04/30 17:47:33 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// split a string using char (c) limitation
-	// array end with a nul pointer ????
-	// use strlcpy 
-	// strchr to get difference until the end
-
-// not sure about the normal behavior : DO I need create empty array?
 
 static int	ft_str_occurence(char const *s, char c)
 {
