@@ -6,14 +6,14 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:44:43 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 20:54:58 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/05/01 18:15:03 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// use strlcpy
-// delete second part of if
+// create a new string from an initial string
+// don't free the old string
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
