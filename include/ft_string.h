@@ -6,7 +6,7 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 18:05:00 by mbriand           #+#    #+#             */
-/*   Updated: 2024/05/01 17:59:02 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/05/01 18:18:16 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_count_char(char *s, char ref);
-char 	*ft_strcut(char *str, char c);
+char	*ft_strcut(char *str, char c);
 
 #endif

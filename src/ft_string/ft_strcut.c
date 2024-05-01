@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcut.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/01 18:17:22 by mbriand           #+#    #+#             */
+/*   Updated: 2024/05/01 18:17:52 by mbriand          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 // Malloc inside: return 0 = failed
 // Get a pointer on new string cut at 'c' pos of str
 // Return str if c is not found
-char *ft_strcut(char *str, char c)
+
+char	*ft_strcut(char *str, char c)
 {
 	char	*cutstr;
 	size_t	cutstr_len;
