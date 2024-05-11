@@ -6,14 +6,9 @@
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 23:47:29 by mbriand           #+#    #+#             */
-/*   Updated: 2023/11/27 19:19:51 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/05/11 23:49:20 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*void    f(unsigned int i, char* s)
-{
-	printf("%s\n", s);
-}*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -28,3 +23,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*
+example:
+void    f(unsigned int i, char* s)
+{
+	printf("%s\n", s);
+}*/

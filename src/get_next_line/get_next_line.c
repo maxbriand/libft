@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 15:48:41 by mbriand           #+#    #+#             */
-/*   Updated: 2024/02/08 16:04:31 by mbriand          ###   ########.fr       */
+/*   Updated: 2024/05/11 23:47:14 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,47 +114,3 @@ char	*get_next_line(int fd)
 	free_str(line, tail[fd], buffer, buffer_len);
 	return (line);
 }
-
-// cc -Wall -Wextra -Werror -D BUFFER_SIZE=5 
-//get_next_line.c get_next_line_utils.c -g
-// if there are nothing to read return NULL
-
-/*#include <stdio.h>
-#include <fcntl.h>
-int	main(void)
-{
-	char	*str;
-
-	int fd = open("test.txt", O_RDWR);
-	int fd2 = open("test2.txt", O_RDWR);
-	int fd3 = open("test3.txt", O_RDWR);
-
-	str = get_next_line(fd);
-	printf("%s", str);
-	free(str);
-
-	str = get_next_line(fd2);
-	printf("%s", str);
-	free(str);
-
-	str = get_next_line(fd3);
-	printf("%s", str);
-	free(str);
-
-	str = get_next_line(fd);
-	printf("%s", str);
-	free(str);
-
-	str = get_next_line(fd2);
-	printf("%s", str);
-	free(str);
-	
-	str = get_next_line(fd3);
-	printf("%s", str);
-	free(str);
-
-	close(fd);
-	close(fd2);
-	close(fd3);
-	return (0);
-}*/
