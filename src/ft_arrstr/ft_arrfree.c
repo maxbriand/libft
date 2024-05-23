@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_free_str_array.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/14 23:44:24 by mbriand           #+#    #+#             */
-/*   Updated: 2024/05/23 17:10:03 by mbriand          ###   ########.fr       */
+/*   Created: 2024/05/02 16:22:52 by mbriand           #+#    #+#             */
+/*   Updated: 2024/05/23 17:02:45 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
+// We don't need to free the NULL pointer because it's not malloc
 
-# include <stdlib.h>
-# include <stdarg.h>
-# include <unistd.h>
-# include <limits.h>
+void	ft_arrfree(char **str_array)
+{
+	char	**save_str_array;
 
-# include "ft_ctype.h"
-# include "ft_stdio.h"
-# include "ft_stdlib.h"
-# include "ft_string.h"
-# include "ft_arrstr.h"
-# include "ft_list.h"
-# include "get_next_line.h"
-
-#endif
+	if (str_array == 0)
+		return ;
+	save_str_array = str_array;
+	while (*str_array)
+	{
+		free(*str_array);
+		str_array++;
+	}
+	free(save_str_array);
+}
