@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_arrfind.c                                       :+:      :+:    :+:   */
+/*   ft_arrncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbriand <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 18:41:15 by mbriand           #+#    #+#             */
-/*   Updated: 2024/06/03 18:46:30 by mbriand          ###   ########.fr       */
+/*   Created: 2024/06/03 18:47:53 by mbriand           #+#    #+#             */
+/*   Updated: 2024/06/03 19:07:24 by mbriand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// return indicator of first occurence of the ref
-int	ft_arrfind(char **arr, char *ref)
+// malloc use - cpy n string of src
+char	**ft_arrncpy(char **dest, char **src, int n)
 {
 	int	i;
 
-	if (!arr || !ref)
-		return (-1);
+	if (!dest || !src)
+		return (NULL);
 	i = 0;
-	while (arr[i])
+	while (src[i] && i < n)
 	{
-		if (ft_strcmp(arr[i], ref) == 0)
-			return (i);
+		dest[i] = ft_strdup(src[i]);
 		i++;
 	}
-	return (-1);
+	dest[i] = NULL;
+	return (dest);
 }
