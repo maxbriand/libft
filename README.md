@@ -19,7 +19,6 @@ Libft is your very first custom C library developed as part of the 42 School cur
 - [Testing](#testing)
 - [Submission Guidelines](#submission-guidelines)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -195,6 +194,3 @@ While the project does not require you to submit test programs, creating your ow
 
 ## Contributing
 This project is primarily for personal educational purposes. However, if you wish to improve the library or fix issues, feel free to fork the repository and submit pull requests. Your contributions are welcome!
-
-## License
-This project is for educational purposes and does not include an explicit license.
