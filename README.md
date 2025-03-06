@@ -48,14 +48,18 @@ To compile the library, ensure you have a C compiler (such as `gcc`) installed. 
 git clone https://github.com/yourusername/libft.git
 cd libft
 make
+```
 
 If you wish to compile the bonus functions as well, execute:
 
+```bash
 make bonus
+```
 
 Usage
 Include the libft.h header in your project and link against the static library libft.a. Here’s a quick example:
 
+```c
 #include "libft.h"
 
 int main(void) {
@@ -64,10 +68,14 @@ int main(void) {
     free(str);
     return 0;
 }
+```
 
 Compile your program by linking with the library:
 
+```bash
 gcc -Wall -Wextra -Werror your_program.c libft.a -o your_program
+```
+
 Functions Overview
 Mandatory Functions (Part 1)
 These functions re-implement core libc features:
@@ -137,7 +145,8 @@ This project is primarily for personal educational purposes. However, if you wis
 License
 This project is for educational purposes and does not include an explicit license.
 
+```yaml
 ---
 
 Feel free to modify sections (like the repository URL or license informatio
-
+```
